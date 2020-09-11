@@ -1,0 +1,17 @@
+/**
+ * #.# Editor Styles
+ *
+ * CSS for just Backend enqueued after style.scss
+ * which makes it higher in priority.
+ */
+
+ .wp-block-pandp-blocks-clear  {
+   background: #fbfbfb;
+   color: #e8e8e8;
+   text-align: center;
+   text-transform: uppercase;
+ }
+
+ .wp-block-pandp-blocks-clear p {
+   margin: 0 !important;
+ }

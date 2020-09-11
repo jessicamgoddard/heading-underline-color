@@ -1,0 +1,11 @@
+/**
+ * #.# Styles
+ *
+ * CSS for both Frontend+Backend.
+ */
+
+ .wp-block-pandp-blocks-clear::before {
+   content: '';
+   clear: both;
+   display: table;
+ }
