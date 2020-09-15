@@ -56,7 +56,7 @@ function createColorClassName( attributes ) {
 
   const settings = select( 'core/editor' ).getEditorSettings();
 
-  let colorClassName = 'has-default-color';
+  let colorClassName = '';
 
   if( attributes.underlineColor ) {
 
