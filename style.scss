@@ -4,8 +4,29 @@
  * CSS for both Frontend+Backend.
  */
 
- .wp-block-pandp-blocks-clear::before {
-   content: '';
-   clear: both;
-   display: table;
- }
+.has-underline-color {
+  display: flex;
+    flex-direction: column;
+
+  &::after {
+    display: block;
+    content: '';
+    height: 7px;
+    margin-top: .25em;
+    width: 100%;
+    max-width: 200px;
+  }
+
+  &.has-text-align-center {
+    align-items: center;
+  }
+
+  &.has-text-align-right {
+    align-items: flex-end;
+  }
+
+  &.has-white-underline-color::after {
+    background: linear-gradient( to left, #F1CA4C 0 25%, #337FD0 25% 50%, #D5161D 50% 75%, #679633 75% 100% ) !important;
+  }
+
+}
