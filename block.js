@@ -10,8 +10,8 @@ import './editor.scss';
 import './style.scss';
 
 // Import icon.
-import icon from '../icon.js';
-import classnames from 'classnames';
+// import icon from '../icon.js';
+// import classnames from 'classnames';
 
 const { __ } = wp.i18n; // Import __() from wp.i18n
 const { addFilter } = wp.hooks;
@@ -122,11 +122,12 @@ function addUnderlineColorSave( el, block, attributes ) {
 
   if( 'core/heading' !== block.name ) return el;
 
-  attributes.className = '';
+  // attributes.className = '';
 
   let underlineColorClass = createColorClassName( attributes );
 
-  el.props.className = classnames( el.props.className, underlineColorClass );
+  // el.props.className = classnames( el.props.className, underlineColorClass );
+  el.props.className = underlineColorClass;
 
   return el;
 
